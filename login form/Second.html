@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Second Question</title>
+</head>
+<body class="body">
+   <header>
+    <div>
+        <img src="img/faiiya2.png" alt="Faiiya logo" class="logoimg">
+        <!-- <h1 class="logo">Faiiya</h1> -->
+    </div>
+    <nav>
+        <ol class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Home.html">First</a></li>
+            <li><a href="Second.html">Second</a></li>
+            <li><a href="#">Blog</a></li>
+
+
+    </ol></nav>
+   </header> 
+   <div class="bigcontainer">
+    <div class="container">
+        <h2>why does the style of internall css still work when it is placed in the body</h2>
+
+        <h4>Answer:</h4>
+        <p>It is recommended because when you have the CSS declared before body starts, your styles has actually loaded already. So very quickly users see something appear on their screen (e.g. background colors). If not, users see blank screen for some time before the CSS reaches the user.
+
+            Also, if you leave the styles somewhere in the body, the browser has to re-render the page (new and old when loading) when the styles declared has been parsed.</p>
+
+            <p>in HTML5 it's okay. But in terms of rendering, it may be slower because the browser re-renders the page like i said</p>
+            <p>The most recent versions of the HTML spec now permits the style tag within body elements. https://www.w3.org/TR/html5/dom.html#flow-content Also the scoped attribute which used to be prerequisite to have a style tag in the body is now obsolete.
+
+                This means, that you can use the style tag everywhere you want, the only implications are decreased page performance due to possible reflows/repaints once the browser hits styles further down in the page tree.</p>
+
+
+
+
+
+   
+   </div>
+</div>
+
+   <footer>
+    <p class="footer_text">Powered by</p> 
+    <a class="footer_link" href="faiiya.tk">@ Faiiya Tech Solution </a>
+
+   </footer>
+</body>
+</html>
